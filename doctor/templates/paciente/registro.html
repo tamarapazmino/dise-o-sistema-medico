@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block header %}
+{% include 'header.html' %}
+{% endblock %}
+
+{% block main %}
+{% load static %}
+
+
+<div class="container" id="inicio">
+    <div class="row">
+        <div class="card col-s12 col-md-12">
+            <form class=" form-group">
+                <fieldset>
+
+                    <legend> <span class="material-icons">
+                            supervisor_account
+                        </span> Registro de Pacientes</legend>
+                        <div class="card-body">
+                            <div class="col form-group">
+                             <img width="20%" height="30%" class="rounded-circle img-responsive" src="{% static 'imagenes/clientes.png' %}" alt="perfil">
+                            </div>
+                            <input type="file" class="btn btn-success btn-sm">
+                        </div>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>Nombres Completos:</label>
+                            <input type="text" class="form-control" placeholder="nombres">
+                        </div>
+                        <div class="col form-group">
+                            <label>Estado Civil:</label>
+                            <input type="text" class="form-control" placeholder="estado civil">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>Cédula:</label>
+                            <input type="text" class="form-control" placeholder="cedula">
+                        </div>
+                        <div class="col form-group">
+                            <label>Sexo:</label>
+                            <input type="text" class="form-control" placeholder="sexo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>Fecha Nacimiento:</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col form-group">
+                            <label>Telefono:</label>
+                            <input type="text" class="form-control" placeholder="telefono">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>Dirección:</label>
+                            <input type="text" class="form-control" placeholder="direccion">
+                        </div>
+                        <div class="col form-group">
+                            <label>Nacionalidad:</label>
+                            <input type="text" class="form-control" placeholder="nacionalidad">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col form-group">
+                            <label>Tipo de Sangre:</label>
+                            <input type="text" class="form-control" placeholder="tipo de sangre">
+                        </div>
+                        <div class="col form-group">
+                            <label>Correo Electrónico:</label>
+                            <input type="email" class="form-control" placeholder="correo electrónico">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group form-inline">
+                    <label class="col-sm-6 col-form-label"></label>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary btn-sm"> Registrar</button>
+                        <a href="#" class="btn btn-danger btn-sm">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
